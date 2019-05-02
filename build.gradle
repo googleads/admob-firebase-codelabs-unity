@@ -1,0 +1,62 @@
+task prepareThirdPartyFiles(type: GradleBuild) {
+    group = "Prepare"
+    description = "Copy required third party files into each project."
+
+    tasks = ['copyLibSimpleJson', 'copyLibUnityMainThreadDispatcher']
+}
+
+task copyLibSimpleJson() {
+    doLast {
+        copy {
+            from "third_party/SimpleJSON"
+            include "*.cs"
+            into "101-base/Assets/Scripts/SimpleJSON"
+        }
+
+        copy {
+            from "third_party/SimpleJSON"
+            include "*.cs"
+            into "101-complete_and_102-base/Assets/Scripts/SimpleJSON"
+        }
+
+        copy {
+            from "third_party/SimpleJSON"
+            include "*.cs"
+            into "102-complete_and_103-base/Assets/Scripts/SimpleJSON"
+        }
+
+        copy {
+            from "third_party/SimpleJSON"
+            include "*.cs"
+            into "103-complete/Assets/Scripts/SimpleJSON"
+        }
+    }
+}
+
+task copyLibUnityMainThreadDispatcher() {
+    doLast {
+        copy {
+            from "third_party/UnityMainThreadDispatcher"
+            include "*.cs"
+            into "101-base/Assets/Scripts/UnityMainThreadDispatcher"
+        }
+
+        copy {
+            from "third_party/UnityMainThreadDispatcher"
+            include "*.cs"
+            into "101-complete_and_102-base/Assets/Scripts/UnityMainThreadDispatcher"
+        }
+
+        copy {
+            from "third_party/UnityMainThreadDispatcher"
+            include "*.cs"
+            into "102-complete_and_103-base/Assets/Scripts/UnityMainThreadDispatcher"
+        }
+
+        copy {
+            from "third_party/UnityMainThreadDispatcher"
+            include "*.cs"
+            into "103-complete/Assets/Scripts/UnityMainThreadDispatcher"
+        }
+    }
+}
