@@ -2,9 +2,13 @@
 
 This codelab shows you how to use the AdMob Rewarded Ads and Firebase together to analyze & optimize the app.
 
+Tested with:
+- Google Mobile Ads Unity Plugin 3.18.1
+- Firebase Unity SDK 6.2.1
+
 ## What you'll need
 
-* Unity 2017.4.18f or higher
+* Unity 2018.4.4f1 or higher
 * Xcode 10 or higher (to build the target for the iOS)
 * A Google account
 * A test device with Android 5.0+ with a USB cable to connect your device, or an Android Emulator running AVD(Android Virtual Device) with a system image that supports Play Store/Google APIs
