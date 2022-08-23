@@ -26,8 +26,6 @@ namespace AwesomeDrawingQuiz.Game {
 
         public const string DIFFICULTY_NORMAL = "normal";
 
-        public const string KEY_DIFFICULTY= "difficulty";
-
         public const string KEY_REWARD_AMOUNT = "reward_amount";
 
         public static GameSettings Instance {
@@ -38,7 +36,7 @@ namespace AwesomeDrawingQuiz.Game {
 
         public string Difficulty {
             get {
-                return FirebaseRemoteConfig.GetValue(KEY_DIFFICULTY).StringValue;
+                return DIFFICULTY_NORMAL;
             }
             private set { }
         }

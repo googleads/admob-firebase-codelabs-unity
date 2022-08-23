@@ -79,8 +79,6 @@ namespace AwesomeDrawingQuiz.Scene {
         private Task InitAndFetchRemoteConfig() {
             // TODO: Initialize and Fetch values from the Remote Config (102)
 
-            // TODO: Set a default value for 'difficulty' Remote Config parameter (103)
-
             return null;
         }
 
