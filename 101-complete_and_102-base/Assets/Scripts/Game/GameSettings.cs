@@ -26,8 +26,6 @@ namespace AwesomeDrawingQuiz.Game {
         public const string DIFFICULTY_EASY = "easy";
 
         public const string DIFFICULTY_NORMAL = "normal";
-
-        // TODO: Add a key for 'difficulty' Remote Config parameter (103)
         
         // TODO: Apply reward amount from the Remote Config (102)
         
@@ -40,7 +38,6 @@ namespace AwesomeDrawingQuiz.Game {
 
         public string Difficulty {
             get {
-                // TODO: Apply difficulty from the Remote Config (103)
                 return DIFFICULTY_NORMAL;
             }
             private set { }

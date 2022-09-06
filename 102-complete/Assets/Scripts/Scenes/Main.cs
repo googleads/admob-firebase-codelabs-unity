@@ -80,8 +80,6 @@ namespace AwesomeDrawingQuiz.Scene {
 
         private Task InitAndFetchRemoteConfig() {
             Dictionary<string, object> defaults = new Dictionary<string, object>();
-            // TODO: Set a default value for 'difficulty' Remote Config parameter (103)
-            
             defaults.Add(GameSettings.KEY_REWARD_AMOUNT, 1);
             FirebaseRemoteConfig.SetDefaults(defaults);
 
